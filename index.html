@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React with CDN</title>
+  </head>
+  <body>
+    <div>
+      <h1>React with CDN</h1>
+      <p>Just trying using react with CDN in simple website</p>
+    </div>
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+
+    <!-- Without Babel -->
+    <!-- <script src="./Components/TestComponent.js"></script> -->
+
+    <!-- With Babel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="./Components/TestComponent.jsx" type="text/babel"></script>
+  </body>
+</html>
